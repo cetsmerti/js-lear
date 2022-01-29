@@ -35,13 +35,32 @@
     privat: false
 
 };
- const a = prompt("Один из последних просмотренных фильмов?", ''),
- b = prompt('На сколько оцените его?','');
- const c = prompt("Один из последних просмотренных фильмов?",''),
- d = prompt('На сколько оцените его?','');
+for (let i = 1 ; i <= 2; i++){
+    let a = prompt("Один из последних просмотренных фильмов?", '');
+    // 22
+    let b = prompt('На сколько оцените его?',''); 
+    // 33
+
+    personalMovieDB.movie[a] = b;
+    if(a,b ==0){
+        i=0;
+    }if(a,b.length<50){
+        i =1;
+    }else{
+        i=0;
+    }
+}
+    // if(personalMovieDB.movie > 0){
+    //         alert('Просмотренно довольно мало фильмов');
+    //     }else if(personalMovieDB.movie < 30){
+    //         alert('Вы класический зритель');
+    //     }else if (personalMovieDB.movie > 30){
+    //         alert("Вы киноман");
+    //     }else{
+    //         alert("произошла ошибка");
+    //     }
+
  
- personalMovieDB.movie[a] = b;
- personalMovieDB.movie[c] = d;
 
 
  console.log(personalMovieDB);
